@@ -17,11 +17,11 @@ int ReadData(string line)
 
 void PrintArr(int[] arr)
 {
-    for (int i = 0; i < arr.Length-1; i++)
+    for (int i = 0; i < arr.Length - 1; i++)
     {
         Console.Write(arr[i] + ", ");
     }
-    Console.WriteLine(arr[arr.Length-1] + ", ");
+    Console.WriteLine(arr[arr.Length - 1] + ", ");
 }
 
 int[] GenArr(int num)
@@ -30,7 +30,7 @@ int[] GenArr(int num)
     int[] arr = new int[num];
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = rnd.Next(0, 2);
+        arr[i] = rnd.Next(1, 10000);
     }
     return arr;
 }
