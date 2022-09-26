@@ -66,7 +66,7 @@ void Print1DArray(double[] arr)
 }
 
 // Создание одномерного массива 
-double[] Array(int[,] arr)
+double[] Count(int[,] arr)
 {
    double[] massiv = new double[arr.GetLength(1)];
 
@@ -95,4 +95,4 @@ int row = ReadData("Введите количество строк");
 int column = ReadData("Введите количество столбцов");
 int[,] arr2D = Gen2DArr(row, column, 10, 99);
 Print2DArr(arr2D);
-Print1DArray( Array(arr2D));
+Print1DArray( Count(arr2D));
